@@ -2,31 +2,13 @@
 
 Вступление
 
-В этой статье подробно рассказывается об административном журнале , файле, в котором записываются ключевые игровые события, такие как чат, попадания игроков и их смерти. Его основная цель - помочь администраторам серверов выявлять злоумышленников, читеров или обнаруживать нарушения любых пользовательских правил, которые сервер мог установить.
+В этой статье подробно рассказывается об <b>административном журнале</b>, файле, в котором записываются ключевые игровые события, такие как чат, попадания игроков и их смерти. Его основная цель - помочь администраторам серверов выявлять злоумышленников, читеров или обнаруживать нарушения любых пользовательских правил, которые сервер мог установить.
 
-Чтобы включить ведение журнала, сервер должен работать с параметром запуска -adminlog
+Чтобы включить ведение журнала, сервер должен работать с параметром запуска <b>-adminlog</b>
 
-Файл журнала называется server_exe_name.ADM и создается в папке профилей, указанной параметром запуска -profiles.
+Файл журнала называется <b>server_exe_name.ADM</b> и создается в папке профилей, указанной параметром запуска -profiles.
 
-Страница обновлена ​​под патч 1.02
-
-<p>This article details <b>Administration Log</b>, a file which records key gameplay events such as chat, player hits and deaths. It's main purpose is to help server administrators identify exploiters, cheaters or spot breaches of any custom rules the server might have set up.   
-</p><p>To enable the logging, server must run with the launch parameter <b>-adminlog</b>
-</p><p>The log file is named <b>server_exe_name.ADM</b> and it is created in the profiles folder, specified by the -profiles launch parameter.
-</p><p>The page is updated for patch <b>1.02</b>
-</p>
-<h2><span class="mw-headline" id="Logged_events">Logged events</span></h2>
-<p>Each message in the log is prefixed by a time stamp in a HH:MM:SS format
-</p>
-//
-<tr>
-<td rowspan="2">Connect/Disconnect</td>
-<td rowspan="2">Connect and disconnect message for each player joining/leaving the server</td>
-<td><tt>Player "Survivor" is connected (id=DAYZGUID) </tt>
-</td></tr>
-<tr>
-<td><tt>Player "Survivor"(id=DAYZGUID) has been disconnected</tt>
-</td></tr>
+Страница обновлена ​​под патч <b>1.02</b>
 
 #### Зарегистрированные события
 Каждому сообщению в журнале предшествует отметка времени а формате ЧЧ:ММ:СС. Пример: 15:50:36.
