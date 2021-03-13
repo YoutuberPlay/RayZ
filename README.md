@@ -1,13 +1,14 @@
 # RayZ
 
-#### Schema
-The following structure is repeated until EOF. There is **no** length prefix, so you have to read to EOF to read all the mappings.
-| type | description |
-|------|-------------|
-| unsigned varint32 | r12 block string ID length |
-| byte[] | r12 block string ID |
-| little-endian int16 | r12 block metadata |
-| TAG_Compound (varint format) | current version NBT blockstate corresponding to the given r12 block |
+Вступление
+
+В этой статье подробно рассказывается об административном журнале , файле, в котором записываются ключевые игровые события, такие как чат, попадания игроков и их смерти. Его основная цель - помочь администраторам серверов выявлять злоумышленников, читеров или обнаруживать нарушения любых пользовательских правил, которые сервер мог установить.
+
+Чтобы включить ведение журнала, сервер должен работать с параметром запуска -adminlog
+
+Файл журнала называется server_exe_name.ADM и создается в папке профилей, указанной параметром запуска -profiles.
+
+Страница обновлена ​​под патч 1.02
 
 #### Зарегистрированные события
 Каждому сообщению в журнале предшествует отметка времени а формате ЧЧ:ММ:СС. Пример: 15:50:36.
