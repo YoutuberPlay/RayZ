@@ -18,6 +18,15 @@
 <h2><span class="mw-headline" id="Logged_events">Logged events</span></h2>
 <p>Each message in the log is prefixed by a time stamp in a HH:MM:SS format
 </p>
+//
+<tr>
+<td rowspan="2">Connect/Disconnect</td>
+<td rowspan="2">Connect and disconnect message for each player joining/leaving the server</td>
+<td><tt>Player "Survivor" is connected (id=DAYZGUID) </tt>
+</td></tr>
+<tr>
+<td><tt>Player "Survivor"(id=DAYZGUID) has been disconnected</tt>
+</td></tr>
 
 #### Зарегистрированные события
 Каждому сообщению в журнале предшествует отметка времени а формате ЧЧ:ММ:СС. Пример: 15:50:36.
