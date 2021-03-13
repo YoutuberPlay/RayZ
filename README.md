@@ -10,12 +10,20 @@
 
 Страница обновлена ​​под патч 1.02
 
+<p>This article details <b>Administration Log</b>, a file which records key gameplay events such as chat, player hits and deaths. It's main purpose is to help server administrators identify exploiters, cheaters or spot breaches of any custom rules the server might have set up.   
+</p><p>To enable the logging, server must run with the launch parameter <b>-adminlog</b>
+</p><p>The log file is named <b>server_exe_name.ADM</b> and it is created in the profiles folder, specified by the -profiles launch parameter.
+</p><p>The page is updated for patch <b>1.02</b>
+</p>
+<h2><span class="mw-headline" id="Logged_events">Logged events</span></h2>
+<p>Each message in the log is prefixed by a time stamp in a HH:MM:SS format
+</p>
+
 #### Зарегистрированные события
 Каждому сообщению в журнале предшествует отметка времени а формате ЧЧ:ММ:СС. Пример: 15:50:36.
 | Мероприятие | Описание | Пример |
 |------|-------------|------|
-| Подключить/отключить | Сообщение о подключении и отключении для каждого игрока, присоединяющегося/покидающего сервер | Игрок "Survivor" подключен (id = DAYZGUID) |
-||| Игрок "Survivor" (id = DAYZGUID) отключен |
+| Подключить/отключить | Сообщение о подключении и отключении для каждого игрока, присоединяющегося/покидающего сервер | Игрок "Survivor" подключен (id = DAYZGUID) /n Игрок "Survivor" (id = DAYZGUID) отключен |
 | тест | тоже | 554 |
 | тест | тоже | 554 |
 | тест | тоже | 554 |
